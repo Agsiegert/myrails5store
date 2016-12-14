@@ -6,5 +6,6 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require cms
 //= require spree/frontend
 //= require_tree .
