@@ -10,4 +10,12 @@ Scrivito.configure do |config|
 
   # Disable the default routes to allow route configuration
   config.inject_preset_routes = false
+
+  config.editing_auth do |env|
+    SolidusScrivitoUser.to_scrivito_user(env["warden"].user)
+  end
+
+  config.find_user do |user_id|
+    SolidusScrivitoUser.to_scrivito_user(Spree::User.find(user_id))
+  end
 end
