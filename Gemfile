@@ -5,7 +5,9 @@ source 'https://rubygems.org'
 gem 'rails', '~> 5.0.0', '>= 5.0.0.1'
 
 # Use Puma as the app server
-gem 'puma', '~> 3.0'
+# gem 'puma', '~> 3.0'
+gem 'thin'
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
@@ -40,8 +42,7 @@ group :development, :test do
   gem 'sqlite3'
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
-  gem 'thin'
-end
+  end
 
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> anywhere in the code.
