@@ -179,7 +179,6 @@ GEM
       actionmailer (>= 3, < 6)
       premailer (~> 1.7, >= 1.7.9)
     public_suffix (2.0.4)
-    puma (3.6.2)
     rabl (0.13.0)
       activesupport (>= 2.3.14)
     rack (2.0.1)
@@ -378,7 +377,6 @@ DEPENDENCIES
   jquery-rails
   listen (~> 3.0.5)
   pg
-  puma (~> 3.0)
   rails (~> 5.0.0, >= 5.0.0.1)
   sass-rails (~> 5.0)
   scrivito (= 1.7.0.rc1)
