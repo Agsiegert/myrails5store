@@ -36,6 +36,7 @@ gem 'solidus_auth_devise'
 gem 'deface', '~> 1.0'
 
 gem 'scrivito', '1.7.0.rc1'
+gem 'scrivito_video_widget'
 
 group :development, :test do
   # Use sqlite3 as the database for Active Record
