@@ -6,7 +6,7 @@ This repo can be cloned and used with your own Scrivito credentials to get a fee
 
 * Signup for [Scrivito](https:scrivito.com/signup)
 
-* CLone this repo to you computer
+* Clone this repo to you computer
 
 * Add a .env file to your repo and add your Scrivito API keys
 
