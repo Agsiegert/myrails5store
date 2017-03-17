@@ -1,24 +1,29 @@
-# README
+# Basic example of the sample solidus store integrated with Scrivito
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This repo can be cloned and used with your own Scrivito credentials to get a feel for what a simple integration with Scrivito can do. 
 
-Things you may want to cover:
+## To get this going:
 
-* Ruby version
+* Signup for [Scrivito](https:scrivito.com/signup)
 
-* System dependencies
+* CLone this repo to you computer
 
-* Configuration
+* Add a .env file to your repo and add your Scrivito API keys
 
-* Database creation
+* bundle
 
-* Database initialization
+* bundle exec rails g spree:install
 
-* How to run the test suite
+* bundle exec rails g solidus:auth:install
 
-* Services (job queues, cache servers, search engines, etc.)
+* bundle exec rails g scrivito:install
 
-* Deployment instructions
+* bundle exec rake scrivito:migrate scrivito:migrate:publish
 
-* ...
+* run rails server and open localhost:3000
+
+* login to solidus as an admin (using the username and password you entered in the solidus:auth:install genterator above, or if you left the defaults use those: admin@example.com/test123).
+
+* See the Solidus integration documentation for how this was built
+
+### System requirements for Ruby and Rails versions are listed in the gemfile
