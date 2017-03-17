@@ -10,17 +10,17 @@ This repo can be cloned and used with your own Scrivito credentials to get a fee
 
 * Add a .env file to your repo and add your Scrivito API keys
 
-* ```ruby bundle```
+* ```bundle```
 
-* ```ruby bundle exec rails g spree:install```
+* ```bundle exec rails g spree:install```
 
-* ```ruby bundle exec rails g solidus:auth:install```
+* ```bundle exec rails g solidus:auth:install```
 
-* ```ruby bundle exec rails g scrivito:install```
+* ```bundle exec rails g scrivito:install```
 
-* ```ruby bundle exec rake scrivito:migrate scrivito:migrate:publish```
+* ```bundle exec rake scrivito:migrate scrivito:migrate:publish```
 
-* run ```ruby rails server``` and open ```ruby localhost:3000```
+* run ```rails server``` and open ```localhost:3000```
 
 * login to solidus as an admin (using the username and password you entered in the solidus:auth:install genterator above, or if you left the defaults use those: admin@example.com/test123).
 
