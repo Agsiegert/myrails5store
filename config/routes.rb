@@ -12,5 +12,14 @@ Rails.application.routes.draw do
   scrivito_route '/', using: 'homepage'
   scrivito_route '(/)(*slug-):id', using: 'slug_id'
   mount Spree::Core::Engine, :at => '/'
+
+  Spree::Core::Engine.routes.draw do
+    resources :products do
+      member do
+        post 'create_scrivito_obj'
+      end
+    end
+  end
+
   scrivito_route '/*permalink', using: 'permalink', format: false
 end
